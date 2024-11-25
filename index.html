@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christian Santamaria">
+    <title>HTML Form with CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>HTML Form with CSS</h1>
+    <form action="results.html" method="get" id="allFieldsForm">
+        <!-- Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- Date -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <!-- Number -->
+        <label for="number">Age:</label>
+        <input type="number" id="number" name="number" min="0">
+
+        <!-- Range -->
+        <label for="range">Progress:</label>
+        <input type="range" id="range" name="range" min="0" max="100">
+
+        <!-- Color -->
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+
+        <!-- File -->
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file">
+
+        <!-- Radio Buttons -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+        <!-- Checkboxes -->
+        <p>Hobbies:</p>
+        <input type="checkbox" id="reading" name="hobby" value="Reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="traveling" name="hobby" value="Traveling">
+        <label for="traveling">Traveling</label>
+        <input type="checkbox" id="sports" name="hobby" value="Sports">
+        <label for="sports">Sports</label>
+
+        <!-- Dropdown -->
+        <label for="state">State:</label>
+        <select id="state" name="state">
+            <option value="california">California</option>
+            <option value="newyork">New York</option>
+            <option value="florida">Florida</option>
+        </select>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Form Submission Results</h1>
+    <ul id="resultsList"></ul>
+    <a href="index.html">Go Back</a>
+    <script>
+        // JavaScript function to display form data
+        const urlParams = new URLSearchParams(window.location.search);
+        const resultsList = document.getElementById('resultsList');
+
+        // Loop through form data and display it
+        urlParams.forEach((value, key) => {
+            const li = document.createElement('li');
+            li.textContent = `${key}: ${value}`;
+            resultsList.appendChild(li);
+        });
+    </script>
+</body>
+</html>
